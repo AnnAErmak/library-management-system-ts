@@ -1,4 +1,4 @@
-import  {TUser} from "./types";
+import  {TUser} from "../types/types";
 
 export const users: TUser[] = [
   {

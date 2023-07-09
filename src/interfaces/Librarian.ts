@@ -1,5 +1,5 @@
 import {User} from "./User";
-import {Role} from "../bd/types";
+import {Role} from "../types/types";
 
 export class Librarian extends User{
 

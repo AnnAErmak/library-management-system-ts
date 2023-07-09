@@ -1,4 +1,4 @@
-import {Role} from "../bd/types";
+import {Role} from "../types/types";
 
 export class User {
    readonly id: number

@@ -1,4 +1,4 @@
-import {Book, Role} from "../bd/types";
+import {Book, Role} from "../types/types";
 import {books} from "../bd/books";
 import {User} from "./User";
 

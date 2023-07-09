@@ -3,7 +3,7 @@ import {Reader} from "./interfaces/Reader";
 import {Librarian} from "./interfaces/Librarian";
 import {Admin} from "./interfaces/Admin";
 import {UserManager} from "./interfaces/UserManager";
-import {Role} from "./bd/types";
+import {Role} from "./types/types";
 
 const bookManager = new BookManager()
 const userManager = new UserManager()
@@ -11,14 +11,12 @@ const ivan = new Reader('Ivan')
 const ira = new Librarian('Ira')
 const oleg = new Admin('Oleg')
 
+//                     Работаем со списком пользователей
 
 // console.log( userManager.deleteUser(25, oleg))
 // console.log(userManager.updateUser(25, {name: 'Oleg', email:'oleg@mail.ru'}, oleg))
 // console.log( userManager.showAllUser(oleg))
 // console.log( userManager.showAllUser(ira))
-// console.log(bookManager.deleteBook(1, ira))
-// console.log(bookManager.deleteBook(2, ira))
-// console.log(bookManager.deleteBook(3, ira))
 // console.log(userManager.addNewUser(    {
 //     name: 'Diam',
 //     email: 'email@mail.com',
@@ -37,6 +35,12 @@ const oleg = new Admin('Oleg')
 //     role: Role.admin
 // }, oleg))
 
+
+//                            Работаем со списком книг
+
+// console.log(bookManager.deleteBook(1, ira))
+// console.log(bookManager.deleteBook(2, ira))
+// console.log(bookManager.deleteBook(3, ira))
 // console.log(bookManager.searchByParams({
 //     bookTitle: "nulla eget",
 //     year: 2007
@@ -50,7 +54,6 @@ const oleg = new Admin('Oleg')
 //     year: 2007
 // }, ira))
 //
-//
 // console.log(bookManager.updateBook(4,   {
 //     bookTitle: "2",
 //     author: "2",
@@ -58,17 +61,20 @@ const oleg = new Admin('Oleg')
 // console.log(bookManager.deleteBook(1, ira))
 // console.log(bookManager.deleteBook(2, ira))
 // console.log(bookManager.deleteBook(3, ira))
-
 // console.log(bookManager.addNewBook(    {
 //     bookTitle: 'diam',
 //     author: 'Lyndel Duthy',
 //     genre: [],
 //     year: 1997
 // }, ira))
-
 // console.log(bookManager.searchByYear(2007, ira))
 //  console.log(bookManager.searchByAuthor('    urieL       Smithies', ivan))
 //   console.log(bookManager.searchByGenre('Comedy', ivan))
+
+
+
+//                                 Дополнительный функционал
+
 //   console.log(ivan.addBookToFavorites(1))
 //   console.log(ivan.addBookToFavorites(2))
 //   console.log(ivan.getFavorites())

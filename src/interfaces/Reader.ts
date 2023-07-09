@@ -1,4 +1,4 @@
-import {Role, Comment} from "../bd/types";
+import {Role, Comment} from "../types/types";
 import {User} from "./User";
 
 export class Reader extends User{
